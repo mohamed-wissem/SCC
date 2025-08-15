@@ -7,7 +7,7 @@ const ServicesSection = () => {
       description:
         "Notre équipe experte en installation de fibre optique assure des connexions ultra-rapides pour répondre à vos besoins en débit.",
       Icon: Wifi,
-      gradient: "from-blue-500 to-cyan-400",
+      gradient: "from-indigo-500 to-cyan-400",
     },
     {
       title: "Security Electronique",
