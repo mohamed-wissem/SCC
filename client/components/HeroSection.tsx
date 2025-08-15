@@ -110,14 +110,14 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="#contact"
-            className="btn-primary text-white px-8 py-4 rounded-lg font-medium text-lg inline-flex items-center gap-2 group"
+            className="btn-primary text-white px-8 py-4 rounded-lg font-medium text-lg inline-flex items-center gap-2 group border border-white/20 white-glow"
           >
             <span>📞</span>
             CONTACTEZ-NOUS
           </a>
           <a
             href="#services"
-            className="btn-secondary text-white px-8 py-4 rounded-lg font-medium text-lg inline-flex items-center gap-2 group"
+            className="btn-secondary text-white px-8 py-4 rounded-lg font-medium text-lg inline-flex items-center gap-2 group border border-white/20"
           >
             SAVOIR PLUS
           </a>
