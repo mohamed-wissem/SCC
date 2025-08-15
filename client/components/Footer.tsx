@@ -213,9 +213,11 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-scc-blue-500 to-tech-cyan rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">SCC</span>
-                </div>
+                <img
+                  src="https://cdn.builder.io/o/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F3b280a77dada48af95fe736c95a59767?alt=media&token=fb1039ef-40db-468b-a38c-d0fb33c61040&apiKey=76a93d8b94f64730bbb85e13816b0ace"
+                  alt="SCC Logo"
+                  className="h-12 w-auto"
+                />
                 <div>
                   <div className="text-white font-semibold text-lg">SCC</div>
                   <div className="text-xs text-gray-300 -mt-1">
