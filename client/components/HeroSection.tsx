@@ -102,7 +102,7 @@ const HeroSection = () => {
           <span className="text-blue-600">Tunisie.</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
           Renforcez vos données grâce à la technologie et à la technologie.
           Réseau
         </p>
