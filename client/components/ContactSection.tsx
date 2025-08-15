@@ -132,7 +132,7 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full btn-primary text-white py-3 rounded-lg font-medium text-lg"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium text-lg transition-colors duration-200"
               >
                 Submit
               </button>
