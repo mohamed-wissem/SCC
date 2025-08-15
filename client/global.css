@@ -138,14 +138,14 @@
   .service-card {
     background: linear-gradient(
       145deg,
-      rgba(37, 38, 68, 0.8) 0%,
-      rgba(48, 49, 79, 0.6) 100%
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 100%
     );
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    box-shadow: 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
       0 8px 32px rgba(15, 15, 35, 0.3),
-      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
   }
 
   .stat-card {
