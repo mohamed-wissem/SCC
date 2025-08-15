@@ -134,7 +134,7 @@ const AboutSection = () => {
                 Your Business Solutions.
               </h2>
 
-              <div className="space-y-4 text-gray-300">
+              <div className="space-y-4 text-gray-100">
                 <p className="text-lg">
                   <strong className="text-white">IT Service Providers</strong>,
                   ellentesque elit eget gravida cum. Cursus euismod quis viverra
