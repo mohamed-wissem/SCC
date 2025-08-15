@@ -14,7 +14,7 @@ const ServicesSection = () => {
       description:
         "Avec nos solutions de sécurité électronique de pointe, vous pouvez dormir tranquille en sachant que vos biens sont protégés 24 heures sur 24, 7 jours",
       Icon: Shield,
-      gradient: "from-purple-500 to-pink-400",
+      gradient: "from-purple-500 to-rose-400",
     },
     {
       title: "Téléphonie sur IP",
