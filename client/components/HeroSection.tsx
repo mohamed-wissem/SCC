@@ -40,17 +40,17 @@ const HeroSection = () => {
         ></div>
 
         {/* Glowing Orbs */}
-        <div className="absolute top-20 left-10 w-4 h-4 bg-tech-cyan rounded-full animate-pulse-glow"></div>
+        <div className="absolute top-20 left-10 w-4 h-4 bg-cyan-400 rounded-full animate-pulse-glow"></div>
         <div
-          className="absolute top-40 right-20 w-6 h-6 bg-scc-blue-500 rounded-full animate-pulse-glow"
+          className="absolute top-40 right-20 w-6 h-6 bg-indigo-500 rounded-full animate-pulse-glow"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="absolute bottom-40 left-20 w-3 h-3 bg-electric-blue rounded-full animate-pulse-glow"
+          className="absolute bottom-40 left-20 w-3 h-3 bg-purple-500 rounded-full animate-pulse-glow"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute bottom-20 right-10 w-5 h-5 bg-tech-cyan rounded-full animate-pulse-glow"
+          className="absolute bottom-20 right-10 w-5 h-5 bg-emerald-400 rounded-full animate-pulse-glow"
           style={{ animationDelay: "0.5s" }}
         ></div>
 
