@@ -30,7 +30,7 @@ const Header = () => {
                   <div className="text-xs text-gray-600 -mt-1">
                     Conseils Et communications
                   </div>
-                  <div className="text-xs text-tech-cyan font-medium">
+                  <div className="text-xs text-blue-600 font-medium">
                     التش��ور والاتصالات
                   </div>
                 </div>
