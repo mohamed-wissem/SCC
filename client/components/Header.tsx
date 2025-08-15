@@ -27,7 +27,7 @@ const Header = () => {
                 />
                 <div className="hidden sm:block">
                   <div className="text-gray-900 font-semibold text-lg">SCC</div>
-                  <div className="text-xs text-gray-300 -mt-1">
+                  <div className="text-xs text-gray-600 -mt-1">
                     Conseils Et communications
                   </div>
                   <div className="text-xs text-tech-cyan font-medium">
