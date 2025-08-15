@@ -67,7 +67,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-300 hover:text-white p-2"
+              className="text-gray-700 hover:text-blue-600 p-2"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
