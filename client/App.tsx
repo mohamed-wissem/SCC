@@ -11,6 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/Index" element={<Index />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
