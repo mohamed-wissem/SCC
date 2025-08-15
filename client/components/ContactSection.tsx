@@ -178,7 +178,7 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="flex items-center gap-3 text-gray-300">
-                  <Fax size={16} className="text-scc-blue-500 flex-shrink-0" />
+                  <Printer size={16} className="text-scc-blue-500 flex-shrink-0" />
                   <span className="text-sm">Fax: +216 71 561 858</span>
                 </div>
               </div>
