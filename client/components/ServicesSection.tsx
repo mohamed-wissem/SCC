@@ -21,7 +21,7 @@ const ServicesSection = () => {
       description:
         "Dites adieu aux coûts élevés de communication et bonjour à la téléphonie sur IP. Notre service de téléphonie sur IP vous offre une communication claire et fluide",
       Icon: Phone,
-      gradient: "from-green-500 to-teal-400",
+      gradient: "from-emerald-500 to-cyan-400",
     },
     {
       title: "Réseau Informatique VDI",
