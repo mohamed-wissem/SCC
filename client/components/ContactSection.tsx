@@ -66,7 +66,7 @@ const ContactSection = () => {
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
                 How Can we <span className="text-gradient">Help</span> you?
               </h2>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-100 leading-relaxed">
                 Contact nascetur ridiculus mus mauris vitae ultricies leo
                 integer malesuada. Duis ut diam quam nulla porttitor massa id
                 neque. Mauris nunc congue nisi vitae suscipit tellus mauris nunc
