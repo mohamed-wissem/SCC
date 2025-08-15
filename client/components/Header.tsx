@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Accueil', href: '#home' },
-    { name: 'Qui sommes-nous?', href: '#about' },
-    { name: 'Références', href: '#portfolio' },
-    { name: 'Partenaires', href: '#partners' },
-    { name: 'Services', href: '#services' },
+    { name: "Accueil", href: "#home" },
+    { name: "Qui sommes-nous?", href: "#about" },
+    { name: "Références", href: "#portfolio" },
+    { name: "Partenaires", href: "#partners" },
+    { name: "Services", href: "#services" },
   ];
 
   return (
@@ -25,8 +25,12 @@ const Header = () => {
                 </div>
                 <div className="hidden sm:block">
                   <div className="text-white font-semibold text-lg">SCC</div>
-                  <div className="text-xs text-gray-300 -mt-1">Conseils Et communications</div>
-                  <div className="text-xs text-tech-cyan font-medium">التشاور والاتصالات</div>
+                  <div className="text-xs text-gray-300 -mt-1">
+                    Conseils Et communications
+                  </div>
+                  <div className="text-xs text-tech-cyan font-medium">
+                    التشاور والاتصالات
+                  </div>
                 </div>
               </div>
             </div>

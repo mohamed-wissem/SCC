@@ -1,10 +1,10 @@
-import HeroSection from '../components/HeroSection';
-import ServicesSection from '../components/ServicesSection';
-import AboutSection from '../components/AboutSection';
-import StatsSection from '../components/StatsSection';
-import TeamSection from '../components/TeamSection';
-import PortfolioSection from '../components/PortfolioSection';
-import ContactSection from '../components/ContactSection';
+import HeroSection from "../components/HeroSection";
+import ServicesSection from "../components/ServicesSection";
+import AboutSection from "../components/AboutSection";
+import StatsSection from "../components/StatsSection";
+import TeamSection from "../components/TeamSection";
+import PortfolioSection from "../components/PortfolioSection";
+import ContactSection from "../components/ContactSection";
 
 const Index = () => {
   return (

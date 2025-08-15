@@ -58,20 +58,20 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // SCC Brand Colors
-        'navy': {
-          900: '#0A0F1C',
-          800: '#1A2332',
-          700: '#2A3749',
-          600: '#3A4B5F',
-          500: '#4A5F75',
+        navy: {
+          900: "#0A0F1C",
+          800: "#1A2332",
+          700: "#2A3749",
+          600: "#3A4B5F",
+          500: "#4A5F75",
         },
-        'scc-blue': {
-          500: '#007BFF',
-          600: '#0056D6',
-          700: '#0043AA',
+        "scc-blue": {
+          500: "#007BFF",
+          600: "#0056D6",
+          700: "#0043AA",
         },
-        'tech-cyan': '#00E5FF',
-        'electric-blue': '#1E88E5',
+        "tech-cyan": "#00E5FF",
+        "electric-blue": "#1E88E5",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -126,9 +126,11 @@ export default {
         "circuit-flow": "circuit-flow 4s ease-in-out infinite",
       },
       backgroundImage: {
-        'circuit-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23007BFF' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3Cpath d='M30 10v10M30 40v10M10 30h10M40 30h10'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
-        'tech-gradient': 'linear-gradient(135deg, #0A0F1C 0%, #1A2332 50%, #2A3749 100%)',
-      }
+        "circuit-pattern":
+          "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23007BFF' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3Cpath d='M30 10v10M30 40v10M10 30h10M40 30h10'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+        "tech-gradient":
+          "linear-gradient(135deg, #0A0F1C 0%, #1A2332 50%, #2A3749 100%)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

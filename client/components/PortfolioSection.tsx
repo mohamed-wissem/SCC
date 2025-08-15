@@ -1,22 +1,24 @@
-import { Calendar, CheckSquare } from 'lucide-react';
+import { Calendar, CheckSquare } from "lucide-react";
 
 const PortfolioSection = () => {
   const projects = [
     {
-      title: 'UI/UX Design',
-      country: 'USA',
-      date: 'JAN 2021',
-      description: 'Why Choose us semper risus in hendrerit gravida rutrum quisque. Pulvinar neque laoreet suspendisse interdum nibh tortor',
-      status: 'completed',
-      image: '🎨',
+      title: "UI/UX Design",
+      country: "USA",
+      date: "JAN 2021",
+      description:
+        "Why Choose us semper risus in hendrerit gravida rutrum quisque. Pulvinar neque laoreet suspendisse interdum nibh tortor",
+      status: "completed",
+      image: "🎨",
     },
     {
-      title: 'Loyalty System',
-      country: 'USA',
-      date: 'APR 2021',
-      description: 'Why Choose us semper risus in hendrerit gravida rutrum quisque. Pulvinar neque laoreet suspendisse interdum nibh tortor',
-      status: 'completed',
-      image: '💳',
+      title: "Loyalty System",
+      country: "USA",
+      date: "APR 2021",
+      description:
+        "Why Choose us semper risus in hendrerit gravida rutrum quisque. Pulvinar neque laoreet suspendisse interdum nibh tortor",
+      status: "completed",
+      image: "💳",
     },
   ];
 
@@ -75,7 +77,9 @@ const PortfolioSection = () => {
                   <div className="flex-1 h-1 bg-navy-700 rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-scc-blue-500 to-tech-cyan rounded-full w-full"></div>
                   </div>
-                  <span className="text-tech-cyan text-xs font-medium">100%</span>
+                  <span className="text-tech-cyan text-xs font-medium">
+                    100%
+                  </span>
                 </div>
 
                 {/* Hover effect */}
@@ -86,7 +90,9 @@ const PortfolioSection = () => {
             {/* Additional decorative card */}
             <div className="service-card p-6 rounded-xl text-center group hover:tech-glow transition-all duration-300">
               <div className="text-4xl mb-4">📋</div>
-              <h3 className="text-lg font-bold text-white mb-2">More Projects</h3>
+              <h3 className="text-lg font-bold text-white mb-2">
+                More Projects
+              </h3>
               <p className="text-gray-300 text-sm mb-4">
                 View our complete portfolio of successful implementations
               </p>
@@ -106,25 +112,29 @@ const PortfolioSection = () => {
                   <div className="w-40 h-40 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-scc-blue-500 to-tech-cyan flex items-center justify-center">
                     <span className="text-6xl text-white">💻</span>
                   </div>
-                  <p className="text-white text-lg font-medium">Development in Progress</p>
-                  <p className="text-gray-300 text-sm">Creating Digital Solutions</p>
+                  <p className="text-white text-lg font-medium">
+                    Development in Progress
+                  </p>
+                  <p className="text-gray-300 text-sm">
+                    Creating Digital Solutions
+                  </p>
                 </div>
 
                 {/* Code overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-transparent to-transparent"></div>
-                
+
                 {/* Floating code elements */}
                 <div className="absolute top-8 left-8 text-tech-cyan text-xs font-mono opacity-60">
                   &lt;div className="portfolio"&gt;
                 </div>
                 <div className="absolute top-16 right-8 text-scc-blue-500 text-xs font-mono opacity-60">
-                  function createApp() {'{'}
+                  function createApp() {"{"}
                 </div>
                 <div className="absolute bottom-16 left-8 text-electric-blue text-xs font-mono opacity-60">
                   return &lt;Portfolio /&gt;;
                 </div>
                 <div className="absolute bottom-8 right-8 text-tech-cyan text-xs font-mono opacity-60">
-                  {'}'}&lt;/div&gt;
+                  {"}"}&lt;/div&gt;
                 </div>
 
                 {/* Floating tech dots */}
@@ -164,11 +174,20 @@ const PortfolioSection = () => {
       {/* Background decorative elements */}
       <div className="absolute top-10 right-10 w-32 h-32 border border-scc-blue-500/20 rounded-full"></div>
       <div className="absolute bottom-10 left-10 w-24 h-24 border border-tech-cyan/20 rounded-full"></div>
-      
+
       {/* Animated circuit lines */}
-      <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        className="absolute inset-0 w-full h-full opacity-10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <defs>
-          <linearGradient id="portfolio-circuit" x1="0%" y1="0%" x2="100%" y2="0%">
+          <linearGradient
+            id="portfolio-circuit"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="0%"
+          >
             <stop offset="0%" stopColor="#007BFF" stopOpacity="0" />
             <stop offset="50%" stopColor="#007BFF" stopOpacity="1" />
             <stop offset="100%" stopColor="#00E5FF" stopOpacity="0" />

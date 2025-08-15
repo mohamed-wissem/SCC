@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from "react";
 
 const StatsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -7,13 +7,13 @@ const StatsSection = () => {
     clientReturns: 0,
     experience: 0,
   });
-  
+
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const stats = [
-    { label: 'Projects Realise', value: 359, suffix: '+' },
-    { label: 'Client Returns', value: 63, suffix: '%' },
-    { label: 'Années d\'expérience', value: 12, suffix: '+' },
+    { label: "Projects Realise", value: 359, suffix: "+" },
+    { label: "Client Returns", value: 63, suffix: "%" },
+    { label: "Années d'expérience", value: 12, suffix: "+" },
   ];
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const StatsSection = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     if (sectionRef.current) {
@@ -35,16 +35,21 @@ const StatsSection = () => {
 
   useEffect(() => {
     if (isVisible) {
-      const animateValue = (start: number, end: number, duration: number, setter: (value: number) => void) => {
+      const animateValue = (
+        start: number,
+        end: number,
+        duration: number,
+        setter: (value: number) => void,
+      ) => {
         const startTime = Date.now();
         const animate = () => {
           const elapsed = Date.now() - startTime;
           const progress = Math.min(elapsed / duration, 1);
           const easeOutCubic = 1 - Math.pow(1 - progress, 3);
           const current = start + (end - start) * easeOutCubic;
-          
+
           setter(Math.floor(current));
-          
+
           if (progress < 1) {
             requestAnimationFrame(animate);
           }
@@ -54,20 +59,20 @@ const StatsSection = () => {
 
       const delay = 300;
       setTimeout(() => {
-        animateValue(0, 359, 2000, (value) => 
-          setAnimatedStats(prev => ({ ...prev, projects: value }))
+        animateValue(0, 359, 2000, (value) =>
+          setAnimatedStats((prev) => ({ ...prev, projects: value })),
         );
       }, delay);
 
       setTimeout(() => {
-        animateValue(0, 63, 1800, (value) => 
-          setAnimatedStats(prev => ({ ...prev, clientReturns: value }))
+        animateValue(0, 63, 1800, (value) =>
+          setAnimatedStats((prev) => ({ ...prev, clientReturns: value })),
         );
       }, delay + 200);
 
       setTimeout(() => {
-        animateValue(0, 12, 1500, (value) => 
-          setAnimatedStats(prev => ({ ...prev, experience: value }))
+        animateValue(0, 12, 1500, (value) =>
+          setAnimatedStats((prev) => ({ ...prev, experience: value })),
         );
       }, delay + 400);
     }
@@ -82,7 +87,7 @@ const StatsSection = () => {
           <div className="absolute right-0 top-0 w-1/2 h-full opacity-30">
             <div className="w-full h-full bg-gradient-to-l from-scc-blue-500/20 to-transparent"></div>
           </div>
-          
+
           {/* Circuit overlay */}
           <div className="absolute inset-0 bg-circuit-pattern opacity-10"></div>
         </div>
@@ -94,8 +99,9 @@ const StatsSection = () => {
           <div className="space-y-6">
             {/* Top paragraph */}
             <p className="text-gray-300 text-sm leading-relaxed mb-8">
-              Skill Set us semper risus in hendrerit gravida rutrum quisque. Pulvinar neque 
-              laoreet suspendisse interdum nibh tortor id aliquet lectus proin.
+              Skill Set us semper risus in hendrerit gravida rutrum quisque.
+              Pulvinar neque laoreet suspendisse interdum nibh tortor id aliquet
+              lectus proin.
             </p>
 
             {/* Stats Grid */}
@@ -103,27 +109,36 @@ const StatsSection = () => {
               {/* Projects Stat */}
               <div className="stat-card p-6 rounded-2xl text-center group hover:tech-glow transition-all duration-300">
                 <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
-                  {animatedStats.projects}<span className="text-scc-blue-500">+</span>
+                  {animatedStats.projects}
+                  <span className="text-scc-blue-500">+</span>
                 </div>
-                <p className="text-gray-300 text-sm font-medium">Projects Realise</p>
+                <p className="text-gray-300 text-sm font-medium">
+                  Projects Realise
+                </p>
                 <div className="absolute top-2 right-2 w-2 h-2 bg-tech-cyan rounded-full animate-pulse-glow"></div>
               </div>
 
               {/* Client Returns Stat */}
               <div className="stat-card p-6 rounded-2xl text-center group hover:tech-glow transition-all duration-300">
                 <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
-                  {animatedStats.clientReturns}<span className="text-scc-blue-500">%</span>
+                  {animatedStats.clientReturns}
+                  <span className="text-scc-blue-500">%</span>
                 </div>
-                <p className="text-gray-300 text-sm font-medium">Client Returns</p>
+                <p className="text-gray-300 text-sm font-medium">
+                  Client Returns
+                </p>
                 <div className="absolute top-2 right-2 w-2 h-2 bg-electric-blue rounded-full animate-pulse-glow"></div>
               </div>
 
               {/* Experience Stat */}
               <div className="stat-card p-6 rounded-2xl text-center group hover:tech-glow transition-all duration-300">
                 <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
-                  {animatedStats.experience}<span className="text-scc-blue-500">+</span>
+                  {animatedStats.experience}
+                  <span className="text-scc-blue-500">+</span>
                 </div>
-                <p className="text-gray-300 text-sm font-medium">Années d'expérience</p>
+                <p className="text-gray-300 text-sm font-medium">
+                  Années d'expérience
+                </p>
                 <div className="absolute top-2 right-2 w-2 h-2 bg-tech-cyan rounded-full animate-pulse-glow"></div>
               </div>
 
@@ -150,13 +165,17 @@ const StatsSection = () => {
                   <div className="w-40 h-40 mx-auto mb-4 rounded-full bg-gradient-to-br from-scc-blue-500 to-tech-cyan flex items-center justify-center">
                     <span className="text-6xl text-white">🥽</span>
                   </div>
-                  <p className="text-white text-lg font-medium">VR/AR Technology Expert</p>
-                  <p className="text-gray-300 text-sm">Future of IT Solutions</p>
+                  <p className="text-white text-lg font-medium">
+                    VR/AR Technology Expert
+                  </p>
+                  <p className="text-gray-300 text-sm">
+                    Future of IT Solutions
+                  </p>
                 </div>
 
                 {/* Tech overlay effects */}
                 <div className="absolute inset-0 bg-gradient-to-t from-scc-blue-500/20 to-transparent"></div>
-                
+
                 {/* Floating tech elements */}
                 <div className="absolute top-4 left-4 w-3 h-3 bg-tech-cyan rounded-full animate-pulse-glow"></div>
                 <div className="absolute top-8 right-8 w-4 h-4 bg-electric-blue rounded-full animate-pulse-glow"></div>

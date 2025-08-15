@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -11,41 +11,62 @@ const HeroSection = () => {
       });
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Animated Background */}
       <div className="absolute inset-0 hero-gradient">
         {/* Circuit Pattern */}
         <div className="absolute inset-0 bg-circuit-pattern opacity-20"></div>
-        
+
         {/* Floating Tech Elements */}
         <div className="absolute inset-0 circuit-animation"></div>
-        
+
         {/* Interactive Light Effects */}
-        <div 
+        <div
           className="absolute w-96 h-96 rounded-full opacity-10 bg-gradient-radial from-scc-blue-500 to-transparent"
           style={{
             left: `${mousePosition.x}%`,
             top: `${mousePosition.y}%`,
-            transform: 'translate(-50%, -50%)',
-            transition: 'all 0.3s ease',
+            transform: "translate(-50%, -50%)",
+            transition: "all 0.3s ease",
           }}
         ></div>
 
         {/* Glowing Orbs */}
         <div className="absolute top-20 left-10 w-4 h-4 bg-tech-cyan rounded-full animate-pulse-glow"></div>
-        <div className="absolute top-40 right-20 w-6 h-6 bg-scc-blue-500 rounded-full animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-40 left-20 w-3 h-3 bg-electric-blue rounded-full animate-pulse-glow" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 right-10 w-5 h-5 bg-tech-cyan rounded-full animate-pulse-glow" style={{ animationDelay: '0.5s' }}></div>
+        <div
+          className="absolute top-40 right-20 w-6 h-6 bg-scc-blue-500 rounded-full animate-pulse-glow"
+          style={{ animationDelay: "1s" }}
+        ></div>
+        <div
+          className="absolute bottom-40 left-20 w-3 h-3 bg-electric-blue rounded-full animate-pulse-glow"
+          style={{ animationDelay: "2s" }}
+        ></div>
+        <div
+          className="absolute bottom-20 right-10 w-5 h-5 bg-tech-cyan rounded-full animate-pulse-glow"
+          style={{ animationDelay: "0.5s" }}
+        ></div>
 
         {/* Circuit Lines */}
-        <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="absolute inset-0 w-full h-full opacity-20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <defs>
-            <linearGradient id="circuit-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <linearGradient
+              id="circuit-gradient"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="0%"
+            >
               <stop offset="0%" stopColor="#007BFF" stopOpacity="0" />
               <stop offset="50%" stopColor="#007BFF" stopOpacity="1" />
               <stop offset="100%" stopColor="#00E5FF" stopOpacity="0" />
@@ -64,7 +85,7 @@ const HeroSection = () => {
             strokeWidth="1"
             fill="none"
             className="animate-circuit-flow"
-            style={{ animationDelay: '2s' }}
+            style={{ animationDelay: "2s" }}
           />
         </svg>
       </div>
@@ -82,7 +103,8 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-          Renforcez vos données grâce à la technologie et à la technologie. Réseau
+          Renforcez vos données grâce à la technologie et à la technologie.
+          Réseau
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

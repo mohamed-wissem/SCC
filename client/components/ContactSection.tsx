@@ -1,51 +1,53 @@
-import { useState } from 'react';
-import { MapPin, Mail, Phone, Printer } from 'lucide-react';
+import { useState } from "react";
+import { MapPin, Mail, Phone, Printer } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
-    email: '',
-    subject: '',
-    message: '',
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const offices = [
     {
-      country: 'INA',
-      flag: '🇮🇩',
-      address: '99 Th Oellink Street 12 As',
-      city: 'Pekanbaru, (CA.) 12333',
+      country: "INA",
+      flag: "🇮🇩",
+      address: "99 Th Oellink Street 12 As",
+      city: "Pekanbaru, (CA.) 12333",
     },
     {
-      country: 'ITALY',
-      flag: '🇮🇹',
-      address: '102 Th San Lezamo Street',
-      city: 'Venice, IT TA, (EUR) 12300',
+      country: "ITALY",
+      flag: "🇮🇹",
+      address: "102 Th San Lezamo Street",
+      city: "Venice, IT TA, (EUR) 12300",
     },
     {
-      country: 'USA',
-      flag: '🇺🇸',
-      address: '99 Th Morgan Street 12 As',
-      city: 'Pekanbaru, (CA.) 12333',
+      country: "USA",
+      flag: "🇺🇸",
+      address: "99 Th Morgan Street 12 As",
+      city: "Pekanbaru, (CA.) 12333",
     },
     {
-      country: 'AUSTRALIA',
-      flag: '🇦🇺',
-      address: '102 Th Pearl Street Venice, IT',
-      city: 'TA, (AUS) 12300',
+      country: "AUSTRALIA",
+      flag: "🇦🇺",
+      address: "102 Th Pearl Street Venice, IT",
+      city: "TA, (AUS) 12300",
     },
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // Handle form submission here
   };
 
@@ -65,16 +67,20 @@ const ContactSection = () => {
                 How Can we <span className="text-gradient">Help</span> you?
               </h2>
               <p className="text-gray-300 leading-relaxed">
-                Contact nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. 
-                Duis ut diam quam nulla porttitor massa id neque. Mauris nunc congue nisi 
-                vitae suscipit tellus mauris nunc pulvinar sapien et ligula.
+                Contact nascetur ridiculus mus mauris vitae ultricies leo
+                integer malesuada. Duis ut diam quam nulla porttitor massa id
+                neque. Mauris nunc congue nisi vitae suscipit tellus mauris nunc
+                pulvinar sapien et ligula.
               </p>
             </div>
 
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Your email
                 </label>
                 <input
@@ -89,7 +95,10 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -104,7 +113,10 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-300 mb-2"
+                >
                   Your message (optional)
                 </label>
                 <textarea
@@ -130,8 +142,10 @@ const ContactSection = () => {
           {/* Right Side - Office Locations */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">Our Offices</h3>
-              
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Our Offices
+              </h3>
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {offices.map((office, index) => (
                   <div
@@ -144,7 +158,7 @@ const ContactSection = () => {
                         {office.country}
                       </h4>
                     </div>
-                    
+
                     <div className="space-y-2 text-gray-300 text-sm">
                       <p>{office.address}</p>
                       <p>{office.city}</p>
@@ -159,26 +173,40 @@ const ContactSection = () => {
 
             {/* Contact Information */}
             <div className="service-card p-6 rounded-xl">
-              <h4 className="text-lg font-bold text-white mb-4">Contact Information</h4>
-              
+              <h4 className="text-lg font-bold text-white mb-4">
+                Contact Information
+              </h4>
+
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-gray-300">
-                  <MapPin size={16} className="text-scc-blue-500 flex-shrink-0" />
-                  <span className="text-sm">Address: Tunis Sfax social - Centre El Maek - D & F 1973 - Montpellier - Tunisie - Tunisie</span>
+                  <MapPin
+                    size={16}
+                    className="text-scc-blue-500 flex-shrink-0"
+                  />
+                  <span className="text-sm">
+                    Address: Tunis Sfax social - Centre El Maek - D & F 1973 -
+                    Montpellier - Tunisie - Tunisie
+                  </span>
                 </div>
-                
+
                 <div className="flex items-center gap-3 text-gray-300">
                   <Mail size={16} className="text-scc-blue-500 flex-shrink-0" />
                   <span className="text-sm">E-mail: scc@scc-tunisie.com</span>
                 </div>
-                
+
                 <div className="flex items-center gap-3 text-gray-300">
-                  <Phone size={16} className="text-scc-blue-500 flex-shrink-0" />
+                  <Phone
+                    size={16}
+                    className="text-scc-blue-500 flex-shrink-0"
+                  />
                   <span className="text-sm">Phone: +216 71 561 877</span>
                 </div>
-                
+
                 <div className="flex items-center gap-3 text-gray-300">
-                  <Printer size={16} className="text-scc-blue-500 flex-shrink-0" />
+                  <Printer
+                    size={16}
+                    className="text-scc-blue-500 flex-shrink-0"
+                  />
                   <span className="text-sm">Fax: +216 71 561 858</span>
                 </div>
               </div>
@@ -191,15 +219,15 @@ const ContactSection = () => {
                   <span className="text-3xl">👩‍💼</span>
                 </div>
               </div>
-              
+
               <h3 className="text-2xl font-bold text-white mb-2">
                 We Take Care of Your Technology Focus.
               </h3>
-              
+
               <p className="text-white/90 mb-6">
                 Leave your Detail in Touch within 24 Hours
               </p>
-              
+
               <button className="btn-secondary text-white px-8 py-3 rounded-lg font-medium">
                 Get Started Now
               </button>
@@ -211,7 +239,7 @@ const ContactSection = () => {
       {/* Background decorative elements */}
       <div className="absolute top-20 right-20 w-32 h-32 border border-scc-blue-500/20 rounded-full animate-pulse-glow"></div>
       <div className="absolute bottom-20 left-20 w-24 h-24 border border-tech-cyan/20 rounded-full animate-pulse-glow"></div>
-      
+
       {/* Floating tech elements */}
       <div className="absolute top-40 left-10 w-4 h-4 bg-tech-cyan rounded-full animate-pulse-glow"></div>
       <div className="absolute bottom-40 right-10 w-3 h-3 bg-scc-blue-500 rounded-full animate-pulse-glow"></div>
