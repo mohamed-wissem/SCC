@@ -28,7 +28,7 @@ const ServicesSection = () => {
       description:
         "Optimisez l'efficacité de votre infrastructure informatique avec notre solution VDI. Grâce à cette technologie innovante, centralisez la gestion",
       Icon: Database,
-      gradient: "from-orange-500 to-red-400",
+      gradient: "from-amber-500 to-rose-400",
     },
   ];
 
