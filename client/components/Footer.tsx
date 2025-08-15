@@ -32,7 +32,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-slate-950 border-t border-white/20">
+    <footer className="relative bg-gradient-to-br from-blue-900 to-blue-800 border-t border-blue-700">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-circuit-pattern opacity-5"></div>
 
