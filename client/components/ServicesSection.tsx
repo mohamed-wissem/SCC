@@ -46,7 +46,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div key={index} className="group relative">
               {/* Service Card */}
-              <div className="service-card p-8 rounded-2xl h-full transition-all duration-300 hover:transform hover:scale-105 hover:tech-glow">
+              <div className="service-card p-8 rounded-2xl h-full transition-all duration-300 hover:transform hover:scale-105 hover:white-glow border border-white/10">
                 {/* Icon */}
                 <div className="relative mb-6">
                   <div
