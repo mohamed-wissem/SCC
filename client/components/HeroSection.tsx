@@ -93,13 +93,13 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6">
-          <span className="text-white">La </span>
-          <span className="text-gradient">principale</span>
-          <span className="text-white"> société de</span>
+          <span className="text-gray-900">La </span>
+          <span className="text-blue-600">principale</span>
+          <span className="text-gray-900"> société de</span>
           <br />
-          <span className="text-white">services informatiques en</span>
+          <span className="text-gray-900">services informatiques en</span>
           <br />
-          <span className="text-gradient">Tunisie.</span>
+          <span className="text-blue-600">Tunisie.</span>
         </h1>
 
         <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
