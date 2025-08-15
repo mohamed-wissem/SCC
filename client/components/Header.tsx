@@ -26,7 +26,7 @@ const Header = () => {
                   className="h-10 w-auto"
                 />
                 <div className="hidden sm:block">
-                  <div className="text-white font-semibold text-lg">SCC</div>
+                  <div className="text-gray-900 font-semibold text-lg">SCC</div>
                   <div className="text-xs text-gray-300 -mt-1">
                     Conseils Et communications
                   </div>
