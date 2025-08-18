@@ -6,11 +6,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Accueil", href: "#home" },
-    { name: "Qui sommes-nous?", href: "#about" },
-    { name: "Références", href: "#portfolio" },
-    { name: "Partenaires", href: "#partners" },
-    { name: "Services", href: "#services" },
+    { name: "Accueil", href: "/", isRoute: true },
+    { name: "Qui sommes-nous?", href: "#about", isRoute: false },
+    { name: "Références", href: "#portfolio", isRoute: false },
+    { name: "Partenaires", href: "/partenaires", isRoute: true },
+    { name: "Services", href: "#services", isRoute: false },
   ];
 
   return (
@@ -32,7 +32,7 @@ const Header = () => {
                     Conseils Et communications
                   </div>
                   <div className="text-xs text-blue-600 font-medium">
-                    التش��ور والاتصالا��
+                    التش��ور والاتصالات
                   </div>
                 </div>
               </div>
