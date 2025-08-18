@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/Index" element={<Index />} />
+          <Route path="/partenaires" element={<Partners />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
