@@ -10,7 +10,7 @@ const Header = () => {
     { name: "Qui sommes-nous?", href: "#about", isRoute: false },
     { name: "Références", href: "#portfolio", isRoute: false },
     { name: "Partenaires", href: "/partenaires", isRoute: true },
-    { name: "Services", href: "#services", isRoute: false },
+    { name: "Services", href: "/services", isRoute: true },
   ];
 
   return (
