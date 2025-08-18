@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ const Header = () => {
                     Conseils Et communications
                   </div>
                   <div className="text-xs text-blue-600 font-medium">
-                    التش��ور والاتصالات
+                    التش��ور والاتصالا��
                   </div>
                 </div>
               </div>
