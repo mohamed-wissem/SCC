@@ -129,9 +129,9 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Our Network <span className="text-gradient">Software</span>
+                SCC <span className="text-gradient">Concepts</span>
                 <br />
-                Your Business Solutions.
+                & Communication Solutions.
               </h2>
 
               <div className="space-y-4 text-gray-100">
