@@ -82,8 +82,9 @@ const Services = () => {
             <span className="text-gray-900">.</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Nous offrons une gamme complète de services IT pour accompagner 
-            votre transformation digitale et optimiser vos performances.
+            SCC propose une gamme complète de services couvrant l'ensemble des composantes
+            de la réalisation des installations réseaux VDI, télécommunications,
+            sécurité électronique et vidéosurveillance.
           </p>
         </div>
       </section>
