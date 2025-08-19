@@ -184,8 +184,7 @@ const ContactSection = () => {
                     className="text-scc-blue-500 flex-shrink-0"
                   />
                   <span className="text-sm">
-                    Address: Tunis Sfax social - Centre El Maek - D & F 1973 -
-                    Montpellier - Tunisie - Tunisie
+                    Address: Centre El Mesk - D 5, 1073 - Mont Plaisir - Tunis - Tunisie
                   </span>
                 </div>
 
