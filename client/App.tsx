@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Index from "./pages/Index";
 import Partners from "./pages/Partners";
 import Services from "./pages/Services";
+import References from "./pages/References";
 import NotFound from "./pages/NotFound";
 
 function App() {
