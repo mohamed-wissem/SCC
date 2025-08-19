@@ -43,28 +43,28 @@ const Services = () => {
 
   const projects = [
     {
-      title: 'Infrastructure Cloud',
-      category: 'Cloud Computing',
-      image: '☁️',
-      description: 'Migration complète vers le cloud pour une entreprise de 500+ employés',
+      title: 'Hotel Movenpick Gammarth',
+      category: 'Vidéosurveillance CCTV',
+      image: '🏨',
+      description: '125 caméras installées pour sécuriser l\'hôtel de luxe',
     },
     {
-      title: 'Application Mobile',
-      category: 'Développement Mobile',
-      image: '📱',
-      description: 'Application mobile e-commerce avec 100k+ téléchargements',
+      title: 'SONOBRA-Heineken',
+      category: 'Sécurité Industrielle',
+      image: '🏭',
+      description: '50 caméras + 10 systèmes de contrôle d\'accès pour l\'usine',
     },
     {
-      title: 'Sécurité Réseau',
-      category: 'Cybersécurité',
-      image: '🔒',
-      description: 'Implémentation de solutions de sécurité avancées',
+      title: 'Figeac AERO',
+      category: 'Sécurité Aéronautique',
+      image: '✈️',
+      description: '120 caméras pour sécuriser l\'usine aéronautique',
     },
     {
-      title: 'IA & Analytics',
-      category: 'Intelligence Artificielle',
-      image: '🤖',
-      description: 'Solutions d\'analyse de données et intelligence artificielle',
+      title: 'Nestlé-IKEL',
+      category: 'Sécurité Alimentaire',
+      image: '🍼',
+      description: '48 caméras + 6 systèmes de contrôle d\'accès',
     },
   ];
 
@@ -333,7 +333,7 @@ const Services = () => {
 
                   <div className="service-card p-6 rounded-xl">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-2xl">🇮🇹</span>
+                      <span className="text-2xl">🇮����</span>
                       <h4 className="text-lg font-bold text-gray-900">ITALY</h4>
                     </div>
                     <div className="space-y-2 text-gray-600 text-sm">
