@@ -198,7 +198,7 @@ const ContactSection = () => {
                     size={16}
                     className="text-scc-blue-500 flex-shrink-0"
                   />
-                  <span className="text-sm">Phone: +216 71 561 877</span>
+                  <span className="text-sm">Phone: +216 71 951 877</span>
                 </div>
 
                 <div className="flex items-center gap-3 text-gray-300">
