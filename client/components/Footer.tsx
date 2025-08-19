@@ -324,6 +324,11 @@ const Footer = () => {
                   <Phone size={16} className="text-scc-blue-500" />
                   <span className="text-gray-300 text-sm">+216 71 951 877</span>
                 </div>
+
+                <div className="flex items-center gap-2">
+                  <Printer size={16} className="text-scc-blue-500" />
+                  <span className="text-gray-300 text-sm">Fax: +216 71 951 858</span>
+                </div>
               </div>
             </div>
           </div>
