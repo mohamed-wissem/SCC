@@ -165,8 +165,9 @@ const Services = () => {
               </h2>
               
               <p className="text-blue-100 leading-relaxed mb-8">
-                Bibendum at varius vel pharetra vel turpis. Bibendum at varius vel pharetra 
-                vel turpis nunc. Posuere ac ut consequat semper viverra.
+                SCC dispose d'agréments du Ministère des Technologies de Communications,
+                d'un laboratoire équipé pour la maintenance, et de certifications pour
+                assurer un service de qualité dans le marché tunisien.
               </p>
 
               {/* Quality Features Grid */}
