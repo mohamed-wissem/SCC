@@ -5,6 +5,7 @@ import {
   Instagram,
   Mail,
   Phone,
+  Printer,
 } from "lucide-react";
 
 const Footer = () => {
@@ -132,7 +133,7 @@ const Footer = () => {
                   </p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-                      <span className="text-white text-sm">👩</span>
+                      <span className="text-white text-sm">����</span>
                     </div>
                     <div>
                       <p className="text-white text-sm font-medium">Marrea</p>
