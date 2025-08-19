@@ -206,7 +206,7 @@ const ContactSection = () => {
                     size={16}
                     className="text-scc-blue-500 flex-shrink-0"
                   />
-                  <span className="text-sm">Fax: +216 71 561 858</span>
+                  <span className="text-sm">Fax: +216 71 951 858</span>
                 </div>
               </div>
             </div>
