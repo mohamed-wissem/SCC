@@ -308,8 +308,8 @@ const Footer = () => {
                     Address:
                   </p>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Tunis Sfax social - Centre El Maek - D & F 1973 -
-                    Montpellier - Tunisie - Tunisie
+                    Centre El Mesk - D 5<br />
+                    1073 - Mont Plaisir - Tunis - Tunisie
                   </p>
                 </div>
 
