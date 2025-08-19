@@ -33,12 +33,12 @@ const Services = () => {
   ];
 
   const qualityFeatures = [
-    'Build The Best User Experience',
-    'Help You with Digital Product',
-    'Build The Best User Future',
-    'Quality Assurance Standardization',
-    'Images and Text Are Clearly',
-    'Build The Best User Experience',
+    'Agrément Catégorie 2 - Intégrateur Télécoms',
+    'Laboratoire équipé pour maintenance',
+    'Équipements conformes aux normes internationales',
+    'Service technique avec 4 véhicules',
+    'Télémaintenance via RTC, VPN & TCP/IP',
+    'Matériel de test et certification réseaux',
   ];
 
   const projects = [
