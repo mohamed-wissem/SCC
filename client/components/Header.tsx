@@ -26,21 +26,12 @@ const Header = () => {
                   alt="SCC Logo"
                   className="h-10 w-auto"
                 />
-                <div className="hidden sm:block">
-                  <div className="text-gray-900 font-semibold text-lg">SCC</div>
-                  <div className="text-xs text-gray-600 -mt-1">
-                    Conseils Et communications
-                  </div>
-                  <div className="text-xs text-blue-600 font-medium">
-                    التش��ور والاتصالات
-                  </div>
-                </div>
               </div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:block">
+          <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
                 item.isRoute ? (
@@ -62,6 +53,8 @@ const Header = () => {
                 )
               ))}
             </div>
+          </div>
+          <nav className="hidden md:block">
           </nav>
 
           {/* Contact Button */}
