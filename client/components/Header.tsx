@@ -59,12 +59,12 @@ const Header = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="btn-primary text-white px-6 py-2 rounded-md text-sm font-medium"
             >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -105,13 +105,13 @@ const Header = () => {
               )
             ))}
             <div className="pt-4">
-              <a
-                href="#contact"
+              <Link
+                to="/contact"
                 className="btn-primary text-white block w-full text-center px-6 py-2 rounded-md text-sm font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
