@@ -5,6 +5,7 @@ import Index from "./pages/Index";
 import Partners from "./pages/Partners";
 import Services from "./pages/Services";
 import References from "./pages/References";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/partenaires" element={<Partners />} />
           <Route path="/services" element={<Services />} />
           <Route path="/references" element={<References />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
