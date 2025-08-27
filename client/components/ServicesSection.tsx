@@ -1,13 +1,22 @@
 import { Wifi, Shield, Phone, Database } from "lucide-react";
 
+interface Service {
+  title: string;
+  description: string;
+  Icon: any;
+  gradient: string;
+  logo?: string;
+}
+
 const ServicesSection = () => {
-  const services = [
+  const services: Service[] = [
     {
       title: "Installation Fibre Optique",
       description:
         "Notre équipe experte en installation de fibre optique assure des connexions ultra-rapides pour répondre à vos besoins en débit.",
       Icon: Wifi,
       gradient: "from-indigo-500 to-cyan-400",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F13a40a4135604212817ec9c08654cf36?format=webp&width=800",
     },
     {
       title: "Security Electronique",
@@ -15,6 +24,7 @@ const ServicesSection = () => {
         "Avec nos solutions de sécurité électronique de pointe, vous pouvez dormir tranquille en sachant que vos biens sont protégés 24 heures sur 24, 7 jours",
       Icon: Shield,
       gradient: "from-purple-500 to-rose-400",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fc858df9f0c264a9bb09630652a94e866?format=webp&width=800",
     },
     {
       title: "Téléphonie sur IP",
@@ -22,6 +32,7 @@ const ServicesSection = () => {
         "Dites adieu aux coûts élevés de communication et bonjour à la téléphonie sur IP. Notre service de téléphonie sur IP vous offre une communication claire et fluide",
       Icon: Phone,
       gradient: "from-emerald-500 to-cyan-400",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F3792bead1b8b4db5b8a9b1d25e328c88?format=webp&width=800",
     },
     {
       title: "Réseau Informatique VDI",
@@ -29,6 +40,7 @@ const ServicesSection = () => {
         "Optimisez l'efficacité de votre infrastructure informatique avec notre solution VDI. Grâce à cette technologie innovante, centralisez la gestion",
       Icon: Database,
       gradient: "from-amber-500 to-rose-400",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F124efe50912241cbb2104b1b512fc04f?format=webp&width=800",
     },
   ];
 
@@ -50,9 +62,17 @@ const ServicesSection = () => {
                 {/* Icon */}
                 <div className="relative mb-6">
                   <div
-                    className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${service.gradient} p-4 mx-auto flex items-center justify-center group-hover:animate-pulse-glow`}
+                    className={`w-20 h-20 rounded-2xl ${service.logo ? 'bg-transparent' : `bg-gradient-to-br ${service.gradient}`} p-4 mx-auto flex items-center justify-center group-hover:animate-pulse-glow overflow-hidden`}
                   >
-                    <service.Icon size={40} className="text-white" />
+                    {service.logo ? (
+                      <img
+                        src={service.logo}
+                        alt={`${service.title} logo`}
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <service.Icon size={40} className="text-white" />
+                    )}
                   </div>
                   {/* Floating dots around icon */}
                   <div className="absolute -top-2 -right-2 w-3 h-3 bg-tech-cyan rounded-full animate-pulse-glow"></div>
