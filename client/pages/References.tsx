@@ -1,4 +1,4 @@
-import { Building2, Camera, Shield, MapPin } from 'lucide-react';
+import { Building2, Camera, Shield, MapPin } from "lucide-react";
 
 interface Reference {
   client: string;
@@ -14,122 +14,138 @@ interface Reference {
 const References = () => {
   const references = [
     {
-      client: 'Hotel Movenpick Gammarth',
-      location: 'Tunis',
-      category: 'Hôtellerie',
-      systems: '125 Caméras',
-      description: 'Système de vidéosurveillance CCTV complet pour hôtel de luxe',
-      icon: '🏨',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fefa40a9160124fc0968f986e8e3420dc?format=webp&width=800',
-      sector: 'Tourisme',
+      client: "Hotel Movenpick Gammarth",
+      location: "Tunis",
+      category: "Hôtellerie",
+      systems: "125 Caméras",
+      description:
+        "Système de vidéosurveillance CCTV complet pour hôtel de luxe",
+      icon: "🏨",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fefa40a9160124fc0968f986e8e3420dc?format=webp&width=800",
+      sector: "Tourisme",
     },
     {
-      client: 'Figeac AERO',
-      location: 'El Mghira, Tunis',
-      category: 'Aéronautique',
-      systems: '120 Caméras',
-      description: 'Sécurité haute technologie pour l\'industrie aéronautique',
-      icon: '✈️',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F144c705da8df407b9e7b78e229caa572?format=webp&width=800',
-      sector: 'Aéronautique',
+      client: "Figeac AERO",
+      location: "El Mghira, Tunis",
+      category: "Aéronautique",
+      systems: "120 Caméras",
+      description: "Sécurité haute technologie pour l'industrie aéronautique",
+      icon: "✈️",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F144c705da8df407b9e7b78e229caa572?format=webp&width=800",
+      sector: "Aéronautique",
     },
     {
-      client: 'Nestlé-IKEL',
-      location: 'Tunis',
-      category: 'Agroalimentaire',
-      systems: '48 Caméras + 6 Contrôles d\'accès',
-      description: 'Solutions de sécurité pour l\'industrie alimentaire',
-      icon: '🍼',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F6c56dcbdaeaf40ce9fa1c62b3ac2f19e?format=webp&width=800',
-      sector: 'Agroalimentaire',
+      client: "Nestlé-IKEL",
+      location: "Tunis",
+      category: "Agroalimentaire",
+      systems: "48 Caméras + 6 Contrôles d'accès",
+      description: "Solutions de sécurité pour l'industrie alimentaire",
+      icon: "🍼",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F6c56dcbdaeaf40ce9fa1c62b3ac2f19e?format=webp&width=800",
+      sector: "Agroalimentaire",
     },
     {
-      client: 'Assurance Maghrebia',
-      location: 'Tunis',
-      category: 'Services Financiers',
-      systems: '40 Caméras + 20 Contrôles d\'accès',
-      description: 'Sécurisation du siège social et des agences',
-      icon: '🏦',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F9cdf78e2ca42446399a8e29f33b347af?format=webp&width=800',
-      sector: 'Finance',
+      client: "Assurance Maghrebia",
+      location: "Tunis",
+      category: "Services Financiers",
+      systems: "40 Caméras + 20 Contrôles d'accès",
+      description: "Sécurisation du siège social et des agences",
+      icon: "🏦",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F9cdf78e2ca42446399a8e29f33b347af?format=webp&width=800",
+      sector: "Finance",
     },
     {
-      client: 'SOFIMA-Ufifilter',
-      location: 'Ben Arous',
-      category: 'Industrie',
-      systems: '100 Caméras',
-      description: 'Surveillance industrielle pour usine de filtres',
-      icon: '⚙️',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F74433b8d3e4c4b1b9c43104c7106881a?format=webp&width=800',
-      sector: 'Industrie',
+      client: "SOFIMA-Ufifilter",
+      location: "Ben Arous",
+      category: "Industrie",
+      systems: "100 Caméras",
+      description: "Surveillance industrielle pour usine de filtres",
+      icon: "⚙️",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F74433b8d3e4c4b1b9c43104c7106881a?format=webp&width=800",
+      sector: "Industrie",
     },
     {
-      client: 'Ministère des Affaires Sociales',
-      location: 'Tunis',
-      category: 'Secteur Public',
-      systems: '42 Caméras + 8 Contrôles d\'accès',
-      description: 'Sécurisation des bâtiments ministériels',
-      icon: '🏛️',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F34cac564476d433a8cd4feb82dd6e8f2?format=webp&width=800',
-      sector: 'Public',
+      client: "Ministère des Affaires Sociales",
+      location: "Tunis",
+      category: "Secteur Public",
+      systems: "42 Caméras + 8 Contrôles d'accès",
+      description: "Sécurisation des bâtiments ministériels",
+      icon: "🏛️",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F34cac564476d433a8cd4feb82dd6e8f2?format=webp&width=800",
+      sector: "Public",
     },
     {
-      client: 'STEG',
-      location: 'Tunis & Ben Arous',
-      category: 'Services Publics',
-      systems: '70 Caméras',
-      description: 'Sécurisation des installations électriques',
-      icon: '⚡',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F21fa13387c0842be8659aa9219ea1133?format=webp&width=800',
-      sector: 'Énergie',
+      client: "STEG",
+      location: "Tunis & Ben Arous",
+      category: "Services Publics",
+      systems: "70 Caméras",
+      description: "Sécurisation des installations électriques",
+      icon: "⚡",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F21fa13387c0842be8659aa9219ea1133?format=webp&width=800",
+      sector: "Énergie",
     },
     {
-      client: 'Tunisair Handling',
-      location: 'Aéroport Tunis',
-      category: 'Aviation',
-      systems: '40 Caméras',
-      description: 'Surveillance du service bagages à l\'aéroport',
-      icon: '🛫',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fa245ed5342e04648a2256f410ddff32b?format=webp&width=800',
-      sector: 'Aviation',
+      client: "Tunisair Handling",
+      location: "Aéroport Tunis",
+      category: "Aviation",
+      systems: "40 Caméras",
+      description: "Surveillance du service bagages à l'aéroport",
+      icon: "🛫",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fa245ed5342e04648a2256f410ddff32b?format=webp&width=800",
+      sector: "Aviation",
     },
     {
-      client: 'Pierre Fabre',
-      location: 'Tunis & Jbal Jloud',
-      category: 'Pharmaceutique',
-      systems: '60 Caméras',
-      description: 'Sécurisation des sites de production pharmaceutique',
-      icon: '💊',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F2f5c8c09f14d46e09772787a18eb2bcd?format=webp&width=800',
-      sector: 'Santé',
+      client: "Pierre Fabre",
+      location: "Tunis & Jbal Jloud",
+      category: "Pharmaceutique",
+      systems: "60 Caméras",
+      description: "Sécurisation des sites de production pharmaceutique",
+      icon: "💊",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F2f5c8c09f14d46e09772787a18eb2bcd?format=webp&width=800",
+      sector: "Santé",
     },
     {
-      client: 'Hôpital El Hourouk',
-      location: 'Ben Arous',
-      category: 'Santé',
-      systems: '50 Caméras',
-      description: 'Surveillance spécialisée pour centre de grands brûlés',
-      icon: '🏥',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F7c1b5d0f9889410da1cf4878949296fb?format=webp&width=800',
-      sector: 'Santé',
+      client: "Hôpital El Hourouk",
+      location: "Ben Arous",
+      category: "Santé",
+      systems: "50 Caméras",
+      description: "Surveillance spécialisée pour centre de grands brûlés",
+      icon: "🏥",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F7c1b5d0f9889410da1cf4878949296fb?format=webp&width=800",
+      sector: "Santé",
     },
     {
-      client: 'ZITOUNA Takaful',
-      location: 'Berges du Lac + Sousse + Sfax',
-      category: 'Finance',
-      systems: '36 Caméras + 28 Contrôles d\'accès',
-      description: 'Sécurisation des bureaux d\'assurance',
-      icon: '🛡️',
-      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F815e106ab8f043f6a9300e842259e5bc?format=webp&width=800',
-      sector: 'Assurance',
+      client: "ZITOUNA Takaful",
+      location: "Berges du Lac + Sousse + Sfax",
+      category: "Finance",
+      systems: "36 Caméras + 28 Contrôles d'accès",
+      description: "Sécurisation des bureaux d'assurance",
+      icon: "🛡️",
+      logo: "https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F815e106ab8f043f6a9300e842259e5bc?format=webp&width=800",
+      sector: "Assurance",
     },
   ];
 
   const sectors = [
-    { name: 'Industrie', count: 15, icon: '🏭', color: 'from-blue-500 to-blue-600' },
-    { name: 'Finance', count: 8, icon: '🏦', color: 'from-green-500 to-green-600' },
-    { name: 'Santé', count: 6, icon: '🏥', color: 'from-red-500 to-red-600' },
-    { name: 'Public', count: 12, icon: '🏛️', color: 'from-purple-500 to-purple-600' },
+    {
+      name: "Industrie",
+      count: 15,
+      icon: "🏭",
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      name: "Finance",
+      count: 8,
+      icon: "🏦",
+      color: "from-green-500 to-green-600",
+    },
+    { name: "Santé", count: 6, icon: "🏥", color: "from-red-500 to-red-600" },
+    {
+      name: "Public",
+      count: 12,
+      icon: "🏛️",
+      color: "from-purple-500 to-purple-600",
+    },
   ];
 
   return (
@@ -138,15 +154,16 @@ const References = () => {
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="absolute inset-0 bg-circuit-pattern opacity-10"></div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
             <span className="text-gray-900">Nos </span>
             <span className="text-blue-600">Références</span>
           </h1>
           <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Découvrez notre portfolio de projets réalisés avec succès à travers 
-            différents secteurs en Tunisie. Plus de 30 clients nous font confiance.
+            Découvrez notre portfolio de projets réalisés avec succès à travers
+            différents secteurs en Tunisie. Plus de 30 clients nous font
+            confiance.
           </p>
         </div>
       </section>
@@ -160,10 +177,14 @@ const References = () => {
                 key={index}
                 className="service-card p-6 rounded-xl text-center group hover:scale-105 transition-transform duration-300"
               >
-                <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${sector.color} rounded-full flex items-center justify-center text-2xl`}>
+                <div
+                  className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${sector.color} rounded-full flex items-center justify-center text-2xl`}
+                >
                   {sector.icon}
                 </div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">{sector.count}+</div>
+                <div className="text-3xl font-bold text-blue-600 mb-2">
+                  {sector.count}+
+                </div>
                 <p className="text-gray-700 font-medium">{sector.name}</p>
               </div>
             ))}
@@ -179,8 +200,8 @@ const References = () => {
               Projets <span className="text-blue-600">Réalisés</span>
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Une sélection de nos réalisations majeures en vidéosurveillance 
-              et contrôle d'accès �� travers la Tunisie.
+              Une sélection de nos réalisations majeures en vidéosurveillance et
+              contrôle d'accès �� travers la Tunisie.
             </p>
           </div>
 
@@ -192,11 +213,13 @@ const References = () => {
               >
                 {/* Client Icon */}
                 <div className="text-center mb-6">
-                  <div className={`mx-auto mb-4 rounded-2xl flex items-center justify-center overflow-hidden ${
-                    reference.logo
-                      ? 'w-24 h-24 bg-transparent'
-                      : 'w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-3xl'
-                  }`}>
+                  <div
+                    className={`mx-auto mb-4 rounded-2xl flex items-center justify-center overflow-hidden ${
+                      reference.logo
+                        ? "w-24 h-24 bg-transparent"
+                        : "w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-3xl"
+                    }`}
+                  >
                     {reference.logo ? (
                       <img
                         src={reference.logo}
@@ -217,7 +240,7 @@ const References = () => {
                   <h3 className="text-lg font-bold text-gray-900 mb-2">
                     {reference.client}
                   </h3>
-                  
+
                   <div className="flex items-center justify-center gap-2 mb-3">
                     <MapPin size={14} className="text-blue-600" />
                     <p className="text-blue-600 font-medium text-sm">
@@ -231,7 +254,7 @@ const References = () => {
                       {reference.systems}
                     </p>
                   </div>
-                  
+
                   <p className="text-gray-600 text-sm leading-relaxed">
                     {reference.description}
                   </p>
@@ -253,7 +276,7 @@ const References = () => {
               <span className="text-blue-600">Agréments</span> & Certifications
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              SCC dispose des agréments officiels du Ministère des Technologies 
+              SCC dispose des agréments officiels du Ministère des Technologies
               de Communications de Tunisie.
             </p>
           </div>
@@ -265,8 +288,12 @@ const References = () => {
                   <Shield size={32} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Agrément Catégorie 2</h3>
-                  <p className="text-blue-600 font-medium">Intégrateur Services Télécommunications</p>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    Agrément Catégorie 2
+                  </h3>
+                  <p className="text-blue-600 font-medium">
+                    Intégrateur Services Télécommunications
+                  </p>
                 </div>
               </div>
               <ul className="space-y-2 text-gray-700">
@@ -291,13 +318,18 @@ const References = () => {
                   <Building2 size={32} className="text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Agrément Catégorie 1</h3>
-                  <p className="text-blue-600 font-medium">Intégrateur Télécommunications Radio</p>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    Agrément Catégorie 1
+                  </h3>
+                  <p className="text-blue-600 font-medium">
+                    Intégrateur Télécommunications Radio
+                  </p>
                 </div>
               </div>
               <p className="text-gray-700">
-                Ces agréments permettent à SCC de se positionner dans le marché tunisien 
-                des télécommunications privé et publique et d'assurer un service de qualité.
+                Ces agréments permettent à SCC de se positionner dans le marché
+                tunisien des télécommunications privé et publique et d'assurer
+                un service de qualité.
               </p>
             </div>
           </div>
@@ -311,8 +343,8 @@ const References = () => {
             Rejoignez Nos Clients Satisfaits
           </h2>
           <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-            Faites confiance à notre expertise prouvée avec plus de 30 projets réalisés 
-            avec succès dans différents secteurs d'activité.
+            Faites confiance à notre expertise prouvée avec plus de 30 projets
+            réalisés avec succès dans différents secteurs d'activité.
           </p>
           <a
             href="/contact"
