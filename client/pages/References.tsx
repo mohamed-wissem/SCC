@@ -9,6 +9,7 @@ const References = () => {
       systems: '125 Caméras',
       description: 'Système de vidéosurveillance CCTV complet pour hôtel de luxe',
       icon: '🏨',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fefa40a9160124fc0968f986e8e3420dc?format=webp&width=800',
       sector: 'Tourisme',
     },
     {
@@ -179,8 +180,16 @@ const References = () => {
               >
                 {/* Client Icon */}
                 <div className="text-center mb-6">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-3xl">
-                    {reference.icon}
+                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-3xl overflow-hidden">
+                    {reference.logo ? (
+                      <img
+                        src={reference.logo}
+                        alt={`${reference.client} logo`}
+                        className="w-full h-full object-contain p-2"
+                      />
+                    ) : (
+                      reference.icon
+                    )}
                   </div>
                   <div className="inline-block px-3 py-1 bg-blue-100 text-blue-600 text-xs font-medium rounded-full">
                     {reference.sector}
