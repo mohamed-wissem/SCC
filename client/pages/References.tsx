@@ -39,6 +39,7 @@ const References = () => {
       systems: '120 Caméras',
       description: 'Sécurité haute technologie pour l\'industrie aéronautique',
       icon: '✈️',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F144c705da8df407b9e7b78e229caa572?format=webp&width=800',
       sector: 'Aéronautique',
     },
     {
@@ -48,6 +49,7 @@ const References = () => {
       systems: '48 Caméras + 6 Contrôles d\'accès',
       description: 'Solutions de sécurité pour l\'industrie alimentaire',
       icon: '🍼',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F6c56dcbdaeaf40ce9fa1c62b3ac2f19e?format=webp&width=800',
       sector: 'Agroalimentaire',
     },
     {
@@ -57,6 +59,7 @@ const References = () => {
       systems: '40 Caméras + 20 Contrôles d\'accès',
       description: 'Sécurisation du siège social et des agences',
       icon: '🏦',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F9cdf78e2ca42446399a8e29f33b347af?format=webp&width=800',
       sector: 'Finance',
     },
     {
@@ -66,6 +69,7 @@ const References = () => {
       systems: '100 Caméras',
       description: 'Surveillance industrielle pour usine de filtres',
       icon: '⚙️',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F74433b8d3e4c4b1b9c43104c7106881a?format=webp&width=800',
       sector: 'Industrie',
     },
     {
@@ -75,6 +79,7 @@ const References = () => {
       systems: '42 Caméras + 8 Contrôles d\'accès',
       description: 'Sécurisation des bâtiments ministériels',
       icon: '🏛️',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F34cac564476d433a8cd4feb82dd6e8f2?format=webp&width=800',
       sector: 'Public',
     },
     {
@@ -84,6 +89,7 @@ const References = () => {
       systems: '70 Caméras',
       description: 'Sécurisation des installations électriques',
       icon: '⚡',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F21fa13387c0842be8659aa9219ea1133?format=webp&width=800',
       sector: 'Énergie',
     },
     {
@@ -93,6 +99,7 @@ const References = () => {
       systems: '40 Caméras',
       description: 'Surveillance du service bagages à l\'aéroport',
       icon: '🛫',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2Fa245ed5342e04648a2256f410ddff32b?format=webp&width=800',
       sector: 'Aviation',
     },
     {
@@ -102,6 +109,7 @@ const References = () => {
       systems: '60 Caméras',
       description: 'Sécurisation des sites de production pharmaceutique',
       icon: '💊',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F2f5c8c09f14d46e09772787a18eb2bcd?format=webp&width=800',
       sector: 'Santé',
     },
     {
@@ -120,6 +128,7 @@ const References = () => {
       systems: '36 Caméras + 28 Contrôles d\'accès',
       description: 'Sécurisation des bureaux d\'assurance',
       icon: '🛡️',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F815e106ab8f043f6a9300e842259e5bc?format=webp&width=800',
       sector: 'Assurance',
     },
   ];
