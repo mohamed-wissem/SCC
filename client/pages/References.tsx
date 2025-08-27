@@ -24,15 +24,6 @@ const References = () => {
       sector: 'Tourisme',
     },
     {
-      client: 'SONOBRA-Heineken',
-      location: 'Grombalia',
-      category: 'Industrie',
-      systems: '50 Caméras + 10 Contrôles d\'accès',
-      description: 'Sécurisation complète de l\'usine de brasserie',
-      icon: '🏭',
-      sector: 'Agroalimentaire',
-    },
-    {
       client: 'Figeac AERO',
       location: 'El Mghira, Tunis',
       category: 'Aéronautique',
