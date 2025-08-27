@@ -188,7 +188,7 @@ const References = () => {
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               Une sélection de nos réalisations majeures en vidéosurveillance 
-              et contrôle d'accès à travers la Tunisie.
+              et contrôle d'accès �� travers la Tunisie.
             </p>
           </div>
 
@@ -196,7 +196,7 @@ const References = () => {
             {references.map((reference, index) => (
               <div
                 key={index}
-                className="service-card p-6 rounded-2xl group hover:scale-105 transition-all duration-300 hover:white-glow border border-white/20"
+                className="service-card p-6 rounded-2xl group transition-all duration-300 hover:white-glow border border-white/20"
               >
                 {/* Client Icon */}
                 <div className="text-center mb-6">
