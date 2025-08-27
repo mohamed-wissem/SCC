@@ -110,6 +110,7 @@ const References = () => {
       systems: '50 Caméras',
       description: 'Surveillance spécialisée pour centre de grands brûlés',
       icon: '🏥',
+      logo: 'https://cdn.builder.io/api/v1/image/assets%2F76a93d8b94f64730bbb85e13816b0ace%2F7c1b5d0f9889410da1cf4878949296fb?format=webp&width=800',
       sector: 'Santé',
     },
     {
