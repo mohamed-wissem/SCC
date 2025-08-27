@@ -62,7 +62,7 @@ const ServicesSection = () => {
                 {/* Icon */}
                 <div className="relative mb-6">
                   <div
-                    className={`w-20 h-20 rounded-2xl ${service.logo ? 'bg-transparent' : `bg-gradient-to-br ${service.gradient}`} p-4 mx-auto flex items-center justify-center group-hover:animate-pulse-glow overflow-hidden`}
+                    className={`w-60 h-60 rounded-2xl ${service.logo ? 'bg-transparent' : `bg-gradient-to-br ${service.gradient}`} p-4 mx-auto flex items-center justify-center group-hover:animate-pulse-glow overflow-hidden`}
                   >
                     {service.logo ? (
                       <img
