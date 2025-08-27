@@ -191,12 +191,16 @@ const References = () => {
               >
                 {/* Client Icon */}
                 <div className="text-center mb-6">
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-3xl overflow-hidden">
+                  <div className={`mx-auto mb-4 rounded-2xl flex items-center justify-center overflow-hidden ${
+                    reference.logo
+                      ? 'w-24 h-24 bg-transparent'
+                      : 'w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 text-3xl'
+                  }`}>
                     {reference.logo ? (
                       <img
                         src={reference.logo}
                         alt={`${reference.client} logo`}
-                        className="w-full h-full object-contain p-2"
+                        className="w-full h-full object-contain"
                       />
                     ) : (
                       reference.icon
