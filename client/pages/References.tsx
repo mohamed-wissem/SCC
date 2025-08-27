@@ -1,5 +1,16 @@
 import { Building2, Camera, Shield, MapPin } from 'lucide-react';
 
+interface Reference {
+  client: string;
+  location: string;
+  category: string;
+  systems: string;
+  description: string;
+  icon: string;
+  logo?: string;
+  sector: string;
+}
+
 const References = () => {
   const references = [
     {
